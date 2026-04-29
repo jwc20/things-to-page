@@ -15,4 +15,4 @@ go.work.sum
 .vscode/
 *.db
 *.sqlite
-
+bin/
