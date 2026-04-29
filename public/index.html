@@ -3,22 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>todo</title>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js" integrity="sha384-H5SrcfygHmAuTDZphMHqBJLc3FhssKjG7w/CeCpFReSfwBWDTKpkzPP8c+cLsK+V" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+      .fade-in.htmx-added { opacity: 0; }
+      .fade-in { opacity: 1; transition: opacity 1s ease-in; }
+    </style>
   </head>
   <body>
 
-    <h1>TEST</h1>
+    <h1>Today</h1>
+    <div hx-get="table.html" hx-trigger="load" hx-swap="innerHTML">
+      <p>Loading table...</p>
+    </div>
 
-    <ul>
-      <li>test1</li>
-      <li>test1</li>
-      <li>test1</li>
-      <li>test1</li>
-      <li>test1</li>
-      <li>test1</li>
-      <li>test1</li>
-    </ul>
-  
   </body>
 </html>
