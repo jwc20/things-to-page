@@ -13,3 +13,6 @@ go.work.sum
 .env
 .idea/
 .vscode/
+*.db
+*.sqlite
+
